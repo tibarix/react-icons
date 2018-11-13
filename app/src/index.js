@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
-import SVGFooter from './components/footer'
-import SVGHeader from './components/header'
-import SVGMain from './components/main'
 
-import './style.scss';
+import AppSVGHeader from './components/AppSVGHeader';
+import GameSVGApp from './components/GameSVGApp';
+import FooterSVGHeader from './components/FooterSVGHeader';
 
 export default class App extends Component {
+
   render() {
     return (
-      <div>
-        <SVGHeader />
-        <SVGMain />
-        <SVGFooter />
+      <div className="container">
+        <AppSVGHeader />
+        <GameSVGApp />
+        <FooterSVGHeader />
       </div>
     );
   }
+
+
 }
